@@ -8,8 +8,12 @@ $primary-color: #ff7012;
     justify-content: space-around;
     align-items: center;
     .brand {
-      font-size: 30px;
+      font-size: 35px;
       font-family: "Satisfy", cursive;
+      cursor: pointer;
+      &:hover{
+        color: #ff7012;
+      }
     }
     .list__links {
       a {
@@ -39,11 +43,10 @@ $primary-color: #ff7012;
     }
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 675px) {
   .navbar {
   }
   .navbar__inner {
-    
     .list__links {
       width: 100%;
       position: absolute;
@@ -51,7 +54,14 @@ $primary-color: #ff7012;
       display: flex;
       flex-direction: column;
       align-items: center;
-      background-color: #ff7012;
+      background-color: black;
+      a{
+        padding: 20px 0;
+        color: white !important;
+      }
+      .active {
+        color: #ff7012 !important;
+      }
     }
   }
 }

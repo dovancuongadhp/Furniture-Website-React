@@ -61,7 +61,7 @@ $gray-text-color:#505050;
       border-radius: 50%;
       border: 2px solid #fc8646;
       background: white;
-      cursor: pointer;
+      cursor: ew-resize;
     }
 
     .slider::-moz-range-thumb {
@@ -69,7 +69,7 @@ $gray-text-color:#505050;
       height: 25px;
       border-radius: 50%;
       background: $orange-slider-color;
-      cursor: pointer;
+      cursor: ew-resize;
     }
   }
   .price__label__wrapper{
@@ -85,4 +85,9 @@ $gray-text-color:#505050;
     }
     
   }
+  // @media screen and (max-width: 675px) {
+
+  //     position: absolute;
+
+  // }
 }
