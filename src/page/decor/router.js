@@ -1,6 +1,7 @@
 import { TypeLayout } from "../../layouts/type";
-import Decor from "./Decor";
-
+import { lazy } from "react";
+// import Decor from "./Decor";
+const Decor =   lazy(()=>import('./Decor')) 
 export const routes = [
     {
         path : '/decor',

@@ -16,18 +16,32 @@
         font-size: 16px;
         border-radius: 50px;
       }
-      option {
-      }
     }
-    .list__product {
-    }
-  }
+   }
   .shop__inner {
     margin: 30px 50px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    .list__product{
+      display: flex;
+      flex-wrap: wrap;
+      .product__wrapper{
+        width: 200px;
+        .product__img img{
+          width: 100%;
+        }
+      }
+
+    }
   }
+
+
+
+
+
+
+
   @media screen and (max-width: 675px) {
     .shop__inner {
       flex-direction: column;

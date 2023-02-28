@@ -34,8 +34,9 @@ export default function Category() {
       <div className="slide__price__wrapper">
         <input
           type="range"
-          min="1"
+          min="0"
           max="100"
+          step="10"
           value={valueSlider}
           className="slider"
           id="myRange"
