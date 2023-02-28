@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { CartIcon, SearchIcon } from "../../assets/icons";
+import { CartIcon, SearchIcon,EcoIcon } from "../../assets/icons";
 import "../../assets/style/navbar.scss";
 export default function Navbar() {
   return (
@@ -16,8 +16,13 @@ export default function Navbar() {
           <NavLink to={"/chair"}>Chair</NavLink>
         </div>
         <div className="list__icons">
-          <SearchIcon />
-          <CartIcon />
+          <div className="social">
+            <EcoIcon />
+            <SearchIcon />
+          </div>
+          <div className="cart__icon">
+            <CartIcon />
+          </div>
         </div>
       </div>
     </div>

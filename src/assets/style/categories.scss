@@ -1,18 +1,88 @@
-.category__wrapper{
+@import url("https://fonts.googleapis.com/css2?family=Thasadith&display=swap");
+$orange-slider-color: #ffb186;
+$gray-text-color:#505050;
+
+.category__container {
+  width: 300px;
+  & > p {
+    color: $gray-text-color;
+    margin: 20px 0;
+  }
+  .category__wrapper {
     font-size: 18px;
-    width: 300px;
     // background-color: rebeccapurple;
     .list__item {
-        list-style: none;
-        .child__item{
-            height: 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid #e3e3e3;
-            .quantity{
-                
-            }
+      list-style: none;
+      .child__item {
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #e3e3e3;
+        .item {
+          font-size: 15px;
+          font-family: "Thasadith", sans-serif !important;
         }
+        .quantity {
+          // font-family: "Thasadith", sans-serif !important;
+          font-size: 13px;
+          font-weight: bold;
+          background-color: #f3f3f3;
+          color: #9a9a9a;
+          padding: 0px 10px;
+          border-radius: 20px;
+        }
+      }
     }
+  }
+  .slide__price__wrapper {
+    width: 100%;
+    .slider {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 7px;
+      border-radius: 5px;
+      background: #ebebeb;
+      outline: none;
+      opacity: 0.9;
+      -webkit-transition: 0.2s;
+      transition: opacity 0.2s;
+    }
+
+    .slider:hover {
+      opacity: 1;
+    }
+
+    .slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      border: 2px solid #fc8646;
+      background: white;
+      cursor: pointer;
+    }
+
+    .slider::-moz-range-thumb {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background: $orange-slider-color;
+      cursor: pointer;
+    }
+  }
+  .price__label__wrapper{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p{
+      color: $gray-text-color;
+      .price {
+        font-weight: 600;
+      }
+    }
+    
+  }
 }

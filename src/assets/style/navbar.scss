@@ -13,7 +13,7 @@ $primary-color: #ff7012;
     }
     .list__links {
       a {
-        margin: 0 10px;
+        margin: 0 20px;
         color: black;
         text-decoration: none;
       }
@@ -21,9 +21,25 @@ $primary-color: #ff7012;
         color: $primary-color;
       }
     }
+    .list__icons{
+      width: auto;
+      // background-color: red;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .social{
+        svg, span{
+          padding: 0 8px;
+        }
+      }
+      .cart__icon span{
+        margin-top: 2px;
+        color: $primary-color;
+      }
+    }
   }
 }
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 500px) {
   .navbar {
   }
   .navbar__inner {

@@ -5,7 +5,7 @@ import Category from '../../components/categories/Category'
 export default function Shop() {
   return (
     <div className='shop__container'> 
-      <TitleBar />
+      <TitleBar namePage={"Shop"} />
       <div className="shop__content">
         <div className="list__product">
           List product

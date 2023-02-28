@@ -1,9 +1,10 @@
 .shop{
     &__container {
-
+       
 
     }
     &__content {
+        margin: 50px 50px;
         display: flex;
         justify-content: space-between;
     }
