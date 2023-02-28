@@ -1,8 +1,20 @@
 
-import React from 'react'
+import React, { useEffect } from 'react'
+import {TypeLayout} from './type'
 import PrimaryLayout from './PrimaryLayout';
-export default function BaseLayout({children}) {
-  const ContainerLayout = PrimaryLayout;
+import HomeLayout from './HomeLayout';
+export default function BaseLayout({children,layout}) {
+
+  function getLayout(layout){
+    if(layout === TypeLayout.HomeLayout){
+      return HomeLayout
+    }
+    if(layout === TypeLayout.PrimaryLayout){
+      return PrimaryLayout
+    }
+  }
+  var ContainerLayout = getLayout(layout);
+ 
 
   return (
     <div>

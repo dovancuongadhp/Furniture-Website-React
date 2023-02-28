@@ -1,0 +1,18 @@
+.category__wrapper{
+    font-size: 18px;
+    width: 300px;
+    // background-color: rebeccapurple;
+    .list__item {
+        list-style: none;
+        .child__item{
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e3e3e3;
+            .quantity{
+                
+            }
+        }
+    }
+}

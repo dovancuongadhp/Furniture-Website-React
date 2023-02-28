@@ -1,0 +1,21 @@
+$gray-titlebar-color: #fbfbfb;
+
+.titlebar{
+    &__container{
+        
+    }
+    &__inner{
+        height: 140px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $gray-titlebar-color;
+
+        .name__page{
+            margin-left: 70px;
+        }
+        .current__link{
+            margin-right: 70px;
+        }
+    }
+}

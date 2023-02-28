@@ -15,12 +15,13 @@ export default function RoutesApp() {
             {allroutes &&
               allroutes.map((item, index) => {
                 const Page = item.element;
+                const layout = item.layout
                 return (
                   <Route
                     key={index}
                     path={item.path}
                     element={
-                      <BaseLayout>
+                      <BaseLayout layout={layout}>
                         <Page />
                       </BaseLayout>
                     }

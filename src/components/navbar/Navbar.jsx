@@ -16,8 +16,8 @@ export default function Navbar() {
           <NavLink to={"/chair"}>Chair</NavLink>
         </div>
         <div className="list__icons">
-          <CartIcon />
           <SearchIcon />
+          <CartIcon />
         </div>
       </div>
     </div>
