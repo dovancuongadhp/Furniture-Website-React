@@ -1,7 +1,7 @@
 import React from 'react'
 import TitleBar from '../../components/titlebar/TitleBar'
-import '../../assets/style/shop.scss'
 import Category from '../../components/categories/Category'
+import '../../assets/style/shop.scss'
 export default function Shop() {
   return (
     <div className='shop__container'> 
@@ -19,7 +19,11 @@ export default function Shop() {
           </div>
           <br />
           <div className="list__product">
-            ListProduct
+            <p>ListProduct</p>
+            <p>ListProduct</p>
+            <p>ListProduct</p>
+            <p>ListProduct</p>
+            <p>ListProduct</p>
           </div>
         </div>
         <div className="shop__categories">

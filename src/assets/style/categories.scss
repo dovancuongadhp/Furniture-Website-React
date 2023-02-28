@@ -10,7 +10,6 @@ $gray-text-color:#505050;
   }
   .category__wrapper {
     font-size: 18px;
-    // background-color: rebeccapurple;
     .list__item {
       list-style: none;
       .child__item {
@@ -36,7 +35,6 @@ $gray-text-color:#505050;
     }
   }
   .slide__price__wrapper {
-    width: 100%;
     .slider {
       -webkit-appearance: none;
       width: 100%;
@@ -85,9 +83,7 @@ $gray-text-color:#505050;
     }
     
   }
-  // @media screen and (max-width: 675px) {
-
-  //     position: absolute;
-
-  // }
+  @media screen and (max-width: 675px) {
+  //  width: 200px;
+  }
 }

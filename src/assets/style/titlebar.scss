@@ -17,9 +17,9 @@ $gray-titlebar-color: #fbfbfb;
         }
         .current__link{
             margin-right: 70px;
-            // background-color: red;
             display: flex;
             align-items: center;
+            justify-content: center;
             .prev{
                 font-family: "Thasadith", sans-serif !important;
                 color: #8d8d8d;
@@ -29,8 +29,9 @@ $gray-titlebar-color: #fbfbfb;
                 font-size: 20px;
             }
             .current{
-                // font-family: "Thasadith", sans-serif !important;
-                font-weight: 500;
+                font-family: "Thasadith", sans-serif !important;
+                font-size: 20px;
+                font-weight: 700;
                 color: #686868;
             }
         }

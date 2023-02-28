@@ -1,11 +1,12 @@
 import React from "react";
 import Navbar from "../components/navbar/Navbar";
-import Category from "../components/categories/Category";
 
 export default function PrimaryLayout({ children }) {
+  
   return (
     <div>
       <Navbar />
+      <h1>Primary layout</h1>
       <div className="primary__layout__container">
         <div className="content">{children}</div>
       </div>
