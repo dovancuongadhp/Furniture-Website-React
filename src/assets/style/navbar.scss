@@ -28,7 +28,6 @@ $primary-color: #ff7012;
       }
       .active {
         color: $primary-color;
-        // visibility: visible;
       }
     }
     // danh sách icons
@@ -49,6 +48,7 @@ $primary-color: #ff7012;
       .toggle__menu span {
         color: $primary-color;
       }
+      // ẩn icon menu
       .toggle__menu {
         visibility: hidden;
       }
@@ -82,7 +82,7 @@ $primary-color: #ff7012;
     }
   }
   .toggle__menu {
-    // show icon mobie toggle
+    // hiện icon menu
     visibility: visible !important;
   }
 }

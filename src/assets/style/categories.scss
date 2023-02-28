@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Thasadith&display=swap");
 $orange-slider-color: #ffb186;
-$gray-text-color:#505050;
+$gray-text-color: #505050;
 
 .category__container {
   width: 300px;
@@ -70,20 +70,20 @@ $gray-text-color:#505050;
       cursor: ew-resize;
     }
   }
-  .price__label__wrapper{
+  .price__label__wrapper {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    p{
+    p {
       color: $gray-text-color;
       .price {
         font-weight: 600;
       }
     }
-    
   }
   @media screen and (max-width: 675px) {
-  //  width: 200px;
+    // width: 100% !important;
   }
+  
 }
