@@ -2,7 +2,7 @@ import Plant from "./Plant";
 
 export const routes = [
     {
-        path : '/',
+        path : '/plant',
         element : Plant,
         layout : null,
     }

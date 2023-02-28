@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+$primary-color: #ff7012;
+.navbar {
+  font-size: 16px;
+  .navbar__inner {
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .brand {
+      font-size: 30px;
+      font-family: "Satisfy", cursive;
+    }
+    .list__links {
+      a {
+        margin: 0 10px;
+        color: black;
+        text-decoration: none;
+      }
+      .active {
+        color: $primary-color;
+      }
+    }
+  }
+}
+@media screen and (max-width: 393px) {
+  .navbar {
+  }
+  .navbar__inner {
+    
+    .list__links {
+      width: 100%;
+      position: absolute;
+      top: 70px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #ff7012;
+    }
+  }
+}

@@ -1,5 +1,5 @@
-import Home from "./Home";
-
+import React from 'react'
+const Home = React.lazy(()=> import('./Home'))
 
 export const routes = [
     {
