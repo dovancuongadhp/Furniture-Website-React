@@ -1,14 +1,10 @@
+import Shop from "./Shop";
 
 
-export const ShopRouter = [
+export const routes = [
     {
         path : '/shop',
-        element : 1,
+        element : Shop,
         layout : null,
-    },
-    {
-        path :  '/shop/detail/:id',
-        element : 2,
-        layout : null
     }
 ]

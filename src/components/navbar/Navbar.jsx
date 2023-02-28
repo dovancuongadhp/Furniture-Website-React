@@ -14,7 +14,7 @@ export default function Navbar() {
         <NavLink to={"/chair"}>Chair</NavLink>
       </div>
       <div className="list__icons">
-        <span class="material-symbols-outlined">shopping_cart</span>
+        <span className="material-symbols-outlined">shopping_cart</span>
       </div>
     </div>
   );
