@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useCallback, useState } from "react";
 import TitleBar from "../../components/titlebar/TitleBar";
 import Category from "../../components/categories/Category";
 import "../../assets/style/shop.scss";
 import CardProduct from "../../components/cardProduct/CardProduct";
 export default function Shop() {
+  const [count, setCount] = useState(1);
   const listProduct = [
     {
       id: 1,
@@ -41,6 +42,14 @@ export default function Shop() {
         "https://images.gessato.com/cb:OWDa~b707/w:auto/h:auto/q:mauto/f:avif/https://www.gessato.com/wp-content/uploads/2023/01/dieckmann-typ-dieckmann-typ-chair-chair-7.jpg",
     },
   ];
+  const handleFilterByPrice = useCallback((value) => {
+    console.log("value filter", value);
+  }, []);
+
+  function handleClickCart() {
+    setCount(count + 1);
+    console.log("count", count);
+  }
   return (
     <div className="shop__container">
       <TitleBar namePage={"Shop"} />
@@ -58,13 +67,19 @@ export default function Shop() {
           <br />
           <div className="list__product">
             {listProduct.map((item) => (
-              <CardProduct key={item.id} image={item.imgLink} price={item.price} productName={item.productName}/>
+              <CardProduct
+                key={item.id}
+                image={item.imgLink}
+                price={item.price}
+                productName={item.productName}
+                onClick={handleClickCart}
+              />
             ))}
           </div>
         </div>
-        <div className="shop__categories">
-          <Category />
-        </div>
+        <aside className="shop__categories">
+          <Category onFilterByPrice={handleFilterByPrice} />
+        </aside>
       </div>
     </div>
   );

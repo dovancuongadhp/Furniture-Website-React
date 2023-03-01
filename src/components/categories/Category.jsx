@@ -1,12 +1,14 @@
-import React, { useState } from "react";
+import React, { useState,memo } from "react";
 import "../../assets/style/categories.scss";
 import Button from "../button/Button";
-export default function Category() {
-    const [valueSlider,setValueSlider] = useState(0);
+function Category({onFilterByPrice}) {
+    const [valueSlider,setValueSlider] = useState(0);  
     function scrollSliderOnchange(event){
        const valueSlider = event.target.value;
        setValueSlider(valueSlider)
+       onFilterByPrice(valueSlider)
     }
+    console.log("category mounted")
   return (
     <div className="category__container">
       <p>Categories</p>
@@ -52,3 +54,4 @@ export default function Category() {
     </div>
   );
 }
+export default memo(Category)
