@@ -62,6 +62,7 @@ $primary-color: #ff7012;
   .navbar__inner {
     .list__links {
       position: absolute;
+      z-index: 1;
       top: 70px;
       right: 0;
       left: 0;

@@ -8,35 +8,35 @@ export default function Shop() {
     {
       id: 1,
       productName: "Ghe noi that dep",
-      price: 231,
+      price: "£5.00",
       imgLink:
         "https://images.gessato.com/cb:OWDa~b707/w:auto/h:auto/q:mauto/f:avif/https://www.gessato.com/wp-content/uploads/2023/01/dieckmann-typ-dieckmann-typ-chair-chair-7.jpg",
     },
     {
       id: 2,
       productName: "Ghe noi that dep",
-      price: 231,
+      price: "£5.00",
       imgLink:
         "https://images.gessato.com/cb:OWDa~b707/w:auto/h:auto/q:mauto/f:avif/https://www.gessato.com/wp-content/uploads/2023/01/dieckmann-typ-dieckmann-typ-chair-chair-7.jpg",
     },
     {
       id: 3,
       productName: "Ghe noi that dep",
-      price: 231,
+      price: "£5.00",
       imgLink:
         "https://images.gessato.com/cb:OWDa~b707/w:auto/h:auto/q:mauto/f:avif/https://www.gessato.com/wp-content/uploads/2023/01/dieckmann-typ-dieckmann-typ-chair-chair-7.jpg",
     },
     {
       id: 4,
       productName: "Ghe noi that dep",
-      price: 231,
+      price: "£5.00",
       imgLink:
         "https://images.gessato.com/cb:OWDa~b707/w:auto/h:auto/q:mauto/f:avif/https://www.gessato.com/wp-content/uploads/2023/01/dieckmann-typ-dieckmann-typ-chair-chair-7.jpg",
     },
     {
       id: 5,
       productName: "Ghe noi that dep",
-      price: 231,
+      price: "£5.00",
       imgLink:
         "https://images.gessato.com/cb:OWDa~b707/w:auto/h:auto/q:mauto/f:avif/https://www.gessato.com/wp-content/uploads/2023/01/dieckmann-typ-dieckmann-typ-chair-chair-7.jpg",
     },
@@ -45,7 +45,7 @@ export default function Shop() {
     <div className="shop__container">
       <TitleBar namePage={"Shop"} />
       <div className="shop__inner">
-        <div className="wrapper__product">
+        <div className="shop__product">
           <div className="filter__product">
             <select name="sorting" id="sort" placeholder="Search">
               <option value="popularity">Sort by popularity</option>
@@ -75,6 +75,7 @@ export default function Shop() {
             ))}
           </div>
         </div>
+
         <div className="shop__categories">
           <Category />
         </div>
