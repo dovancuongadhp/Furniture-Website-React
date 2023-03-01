@@ -2,7 +2,7 @@ import React from "react";
 import TitleBar from "../../components/titlebar/TitleBar";
 import Category from "../../components/categories/Category";
 import "../../assets/style/shop.scss";
-import CartIcon from "../../assets/icons/CartIcon";
+import CardProduct from "../../components/cardProduct/CardProduct";
 export default function Shop() {
   const listProduct = [
     {
@@ -58,24 +58,10 @@ export default function Shop() {
           <br />
           <div className="list__product">
             {listProduct.map((item) => (
-              <div key={item.id} className="product__wrapper">
-                <div className="product__img">
-                  <img src={item.imgLink} alt="photo" />
-                </div>
-                <div className="product__bottom">
-                  <div className="product__description">
-                    <p className="product__name">{item.productName}</p>
-                    <p className="product__price">{item.price}</p>
-                  </div>
-                  <div className="product__cart">
-                    <CartIcon />
-                  </div>
-                </div>
-              </div>
+              <CardProduct key={item.id} image={item.imgLink} price={item.price} productName={item.productName}/>
             ))}
           </div>
         </div>
-
         <div className="shop__categories">
           <Category />
         </div>

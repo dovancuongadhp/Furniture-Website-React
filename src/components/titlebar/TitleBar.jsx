@@ -8,7 +8,7 @@ export default function TitleBar({namePage}) {
         <div className="current__link">
           <span className="prev">Home</span>
             <span className="material-symbols-outlined arrow">chevron_right</span>
-          <span className="current">Shop</span>
+          <span className="current">{namePage}</span>
         </div>
       </div>
     </div>
