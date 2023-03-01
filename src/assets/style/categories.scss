@@ -3,7 +3,9 @@ $orange-slider-color: #ffb186;
 $gray-text-color: #505050;
 
 .category__container {
-  width: 300px;
+  min-width: 300px;
+  width: 100%;
+  // background-color: red;
   & > p {
     color: $gray-text-color;
     margin: 20px 0;
@@ -23,7 +25,6 @@ $gray-text-color: #505050;
           font-family: "Thasadith", sans-serif !important;
         }
         .quantity {
-          // font-family: "Thasadith", sans-serif !important;
           font-size: 13px;
           font-weight: bold;
           background-color: #f3f3f3;

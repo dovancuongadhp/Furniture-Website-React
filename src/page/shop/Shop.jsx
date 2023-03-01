@@ -33,6 +33,13 @@ export default function Shop() {
       imgLink:
         "https://images.gessato.com/cb:OWDa~b707/w:auto/h:auto/q:mauto/f:avif/https://www.gessato.com/wp-content/uploads/2023/01/dieckmann-typ-dieckmann-typ-chair-chair-7.jpg",
     },
+    {
+      id: 5,
+      productName: "Ghe noi that dep",
+      price: 231,
+      imgLink:
+        "https://images.gessato.com/cb:OWDa~b707/w:auto/h:auto/q:mauto/f:avif/https://www.gessato.com/wp-content/uploads/2023/01/dieckmann-typ-dieckmann-typ-chair-chair-7.jpg",
+    },
   ];
   return (
     <div className="shop__container">
