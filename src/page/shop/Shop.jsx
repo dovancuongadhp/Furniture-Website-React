@@ -59,6 +59,7 @@ export default function Shop() {
     <div className="shop__container">
       <TitleBar namePage={"Shop"} />
       <div className="shop__wrapper">
+        {/* start shop__wrapper */}
         <div className="shop__product">
           <div className="filter__product">
             <select name="sorting" id="sort" placeholder="Search">
@@ -85,6 +86,7 @@ export default function Shop() {
         <aside className="shop__categories">
           <Category />
         </aside>
+        {/* end shop__wrapper */}
       </div>
     </div>
   );

@@ -6,6 +6,7 @@ $primary-color: #ff7012;
     justify-content: center;
     max-width: 1400px;
     .shop__product {
+      margin-top: 20px;
       flex-grow: 1;
       .filter__product {
         select {
