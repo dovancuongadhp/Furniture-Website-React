@@ -1,7 +1,7 @@
 import { TypeLayout } from "../../layouts/type";
 import Light from "./Light";
 
-export const routes = [
+const routes = [
     {
         path : '/light',
         element : Light,
@@ -9,3 +9,4 @@ export const routes = [
     }
    
 ]
+export default routes

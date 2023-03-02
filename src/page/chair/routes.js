@@ -1,7 +1,7 @@
 import { TypeLayout } from "../../layouts/type";
 import Chair from "./Chair";
 
-export const routes = [
+const routes = [
     {
         path : '/chair',
         element : Chair,
@@ -9,3 +9,4 @@ export const routes = [
     }
    
 ]
+export default routes;

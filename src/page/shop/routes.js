@@ -3,10 +3,11 @@ import React from "react";
 // import Shop from "./Shop";
 const Shop = React.lazy(()=>import('./Shop'))
 
-export const routes = [
+const routes = [
     {
         path : '/shop',
         element : Shop,
         layout : TypeLayout.PrimaryLayout,
     }
 ]
+export default routes;

@@ -1,4 +1,4 @@
-import { listroutes } from "./listroutes";
+import listRoutes from "./listRoutes";
 import { Fragment, Suspense } from "react";
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -11,8 +11,8 @@ export default function RoutesApp() {
       <Suspense fallback={<Loading />}>
         <BrowserRouter>
           <Routes>
-            {listroutes &&
-              listroutes.map((item, index) => {
+            {listRoutes &&
+              listRoutes.map((item, index) => {
                 const Page = item.element;
                 const layout = item.layout
                 return (

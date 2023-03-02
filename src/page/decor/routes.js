@@ -1,8 +1,8 @@
 import { TypeLayout } from "../../layouts/type";
 import { lazy } from "react";
 // import Decor from "./Decor";
-const Decor =   lazy(()=>import('./Decor')) 
-export const routes = [
+const Decor = lazy(()=>import('./Decor')) 
+const routes = [
     {
         path : '/decor',
         element : Decor,
@@ -10,3 +10,4 @@ export const routes = [
     }
    
 ]
+export default routes;

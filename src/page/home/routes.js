@@ -2,7 +2,7 @@ import React from 'react'
 import { TypeLayout } from '../../layouts/type'
 const Home = React.lazy(()=> import('./Home'))
 
-export const routes = [
+const routes = [
     {
         path : '/',
         element : Home,
@@ -10,3 +10,4 @@ export const routes = [
     }
    
 ]
+export default routes;
