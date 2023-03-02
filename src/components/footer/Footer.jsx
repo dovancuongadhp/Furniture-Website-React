@@ -1,30 +1,43 @@
 import React from "react";
 import "../../assets/style/footer.scss";
+import { LockIcon, PaypalIcon, VisaIcon } from "../../assets/icons";
 export default function Footer() {
   return (
     <footer className="footer__container">
       <div className="footer__wrapper">
         <div className="footer__el payment__method">
           <p className="footer__heading">PAYMENT METHOD</p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
-            recusandae sequi porro provident aut culpa, dolores fugit rem
-            maiores veniam totam reiciendis doloribus ipsam pariatur iusto quas?
-            Modi, perspiciatis neque?
+          <p className="footer__title">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+            reiciendis explicabo perspiciatis necessitatibus similique est
+            harum. Numquam dolorem, optio suscipit architecto maxime, veniam
+            pariatur, porro minima minus facere exercitationem quidem!
           </p>
+          <ul className="payment__icon">
+            <li>
+              <VisaIcon />
+            </li>
+            <li>
+              <PaypalIcon />
+            </li>
+          </ul>
+          <span style={{ display: "flex", alignItems: "center" }}>
+            <LockIcon size={16} color={"black"} />
+            <p className="footer__title">Secure online payment</p>
+          </span>
         </div>
         <div className="footer__el top__rate">
           <p className="footer__heading">TOP RATE</p>
-          <ul>
-            <li>Item 1</li>
-            <li>Item 1</li>
-            <li>Item 1</li>
-            <li>Item 1</li>
+          <ul className="footer__listitem">
+            <li>New Product 2022</li>
+            <li>New Product 2023</li>
+            <li>New Product in Summer</li>
+            <li>Product Viral</li>
           </ul>
         </div>
         <div className="footer__el shop__guide">
           <p className="footer__heading">SHOP GUIDE</p>
-          <ul>
+          <ul className="footer__listitem">
             <li>FAQ</li>
             <li>Shipment</li>
             <li>Return</li>
@@ -35,8 +48,8 @@ export default function Footer() {
           </ul>
         </div>
         <div className="footer__el company">
-          <p className="footer__heading">PAYMENT METHOD</p>
-          <ul>
+          <p className="footer__heading">COMPANY</p>
+          <ul className="footer__listitem">
             <li>About us</li>
             <li>Press</li>
             <li>Our team</li>
@@ -45,6 +58,9 @@ export default function Footer() {
             <li>Contact</li>
           </ul>
         </div>
+      </div>
+      <div className="footer__nocopyright">
+        <p>© 2023 Unicoin, Design by Cuongdkun</p>
       </div>
     </footer>
   );

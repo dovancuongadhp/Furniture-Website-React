@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Thasadith&display=swap");
 $gray-titlebar-color: #fbfbfb;
 
 .titlebar{
@@ -16,12 +15,12 @@ $gray-titlebar-color: #fbfbfb;
             margin-left: 70px;
         }
         .current__link{
+            font-size: 16px;
             margin-right: 70px;
             display: flex;
             align-items: center;
             justify-content: center;
             .prev{
-                font-family: "Thasadith", sans-serif !important;
                 color: #8d8d8d;
             }
             .arrow{
@@ -29,8 +28,6 @@ $gray-titlebar-color: #fbfbfb;
                 font-size: 20px;
             }
             .current{
-                font-family: "Thasadith", sans-serif !important;
-                // font-size: 20px;
                 font-weight: 700;
                 color: #686868;
             }

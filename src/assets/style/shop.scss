@@ -1,12 +1,11 @@
 $primary-color: #ff7012;
 .shop__container {
-  .shop__inner {
+  .shop__wrapper {
     margin: 30px 50px;
     display: flex;
     justify-content: space-around;
     
     .shop__product {
-      // width: 100%;
       flex-grow: 1;
       .filter__product {
         select {
@@ -25,7 +24,6 @@ $primary-color: #ff7012;
         }
       }
       .list__product {
-        // background-color: rebeccapurple;
         position: relative;
         display: grid;
         // grid-template-columns: repeat(3, 1fr);
@@ -40,7 +38,7 @@ $primary-color: #ff7012;
   }
 
   @media screen and (max-width: 1000px) {
-    .shop__inner {
+    .shop__wrapper {
       flex-direction: column;
       align-items: center;
       justify-content: center;

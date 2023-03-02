@@ -41,6 +41,13 @@ export default function Shop() {
       imgLink:
         "https://images.gessato.com/cb:OWDa~b707/w:auto/h:auto/q:mauto/f:avif/https://www.gessato.com/wp-content/uploads/2023/01/dieckmann-typ-dieckmann-typ-chair-chair-7.jpg",
     },
+    {
+      id: 6,
+      productName: "Ghe noi that dep",
+      price: "£5.00",
+      imgLink:
+        "https://images.gessato.com/cb:OWDa~b707/w:auto/h:auto/q:mauto/f:avif/https://www.gessato.com/wp-content/uploads/2023/01/dieckmann-typ-dieckmann-typ-chair-chair-7.jpg",
+    },
   ];
   function handleClickCart() {
     setCount(count + 1);
@@ -49,7 +56,7 @@ export default function Shop() {
   return (
     <div className="shop__container">
       <TitleBar namePage={"Shop"} />
-      <div className="shop__inner">
+      <div className="shop__wrapper">
         <div className="shop__product">
           <div className="filter__product">
             <select name="sorting" id="sort" placeholder="Search">
