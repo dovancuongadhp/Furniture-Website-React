@@ -1,8 +1,15 @@
 import React, { useCallback, useState } from "react";
+import "../../assets/style/shop.scss";
 import TitleBar from "../../components/titlebar/TitleBar";
 import Category from "../../components/categories/Category";
-import "../../assets/style/shop.scss";
 import CardProduct from "../../components/cardProduct/CardProduct";
+
+//image
+import Image1 from '../../assets/img/cropped-images/img-1.jpg'
+import Image2 from '../../assets/img/cropped-images/img-2.jpg'
+import Image3 from '../../assets/img/cropped-images/img-3.jpg'
+import Image4 from '../../assets/img/cropped-images/img-4.jpg'
+import Image5 from '../../assets/img/cropped-images/img-5.jpg'
 export default function Shop() {
   const [count, setCount] = useState(1);
   const listProduct = [
@@ -10,36 +17,31 @@ export default function Shop() {
       id: 1,
       productName: "Ghe noi that dep",
       price: "£5.00",
-      imgLink:
-        "https://images.gessato.com/cb:OWDa~b707/w:auto/h:auto/q:mauto/f:avif/https://www.gessato.com/wp-content/uploads/2023/01/dieckmann-typ-dieckmann-typ-chair-chair-7.jpg",
+      imgLink: Image1
     },
     {
       id: 2,
       productName: "Ghe noi that dep",
       price: "£5.00",
-      imgLink:
-        "https://images.gessato.com/cb:OWDa~b707/w:auto/h:auto/q:mauto/f:avif/https://www.gessato.com/wp-content/uploads/2023/01/dieckmann-typ-dieckmann-typ-chair-chair-7.jpg",
+      imgLink: Image2
     },
     {
       id: 3,
       productName: "Ghe noi that dep",
       price: "£5.00",
-      imgLink:
-        "https://images.gessato.com/cb:OWDa~b707/w:auto/h:auto/q:mauto/f:avif/https://www.gessato.com/wp-content/uploads/2023/01/dieckmann-typ-dieckmann-typ-chair-chair-7.jpg",
+      imgLink: Image3
     },
     {
       id: 4,
       productName: "Ghe noi that dep",
       price: "£5.00",
-      imgLink:
-        "https://images.gessato.com/cb:OWDa~b707/w:auto/h:auto/q:mauto/f:avif/https://www.gessato.com/wp-content/uploads/2023/01/dieckmann-typ-dieckmann-typ-chair-chair-7.jpg",
+      imgLink: Image4
     },
     {
       id: 5,
       productName: "Ghe noi that dep",
       price: "£5.00",
-      imgLink:
-        "https://images.gessato.com/cb:OWDa~b707/w:auto/h:auto/q:mauto/f:avif/https://www.gessato.com/wp-content/uploads/2023/01/dieckmann-typ-dieckmann-typ-chair-chair-7.jpg",
+      imgLink: Image5
     },
     {
       id: 6,

@@ -56,9 +56,10 @@ $primary-color: #ff7012;
     .footer__nocopyright{
         padding: 20px 0;
         text-align: center;
-        background-color: $primary-color;
+        // background-color: $primary-color;
+        background-color: #f6f6f6;
         p{
-            color: #fbfbfb;
+            color: black;
         }
     }
     @media screen and (max-width: 1150px) {
