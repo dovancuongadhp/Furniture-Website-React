@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Thasadith&display=swap");
+
 $orange-slider-color: #ffb186;
 $gray-text-color: #505050;
 
@@ -23,11 +23,11 @@ $gray-text-color: #505050;
         border-bottom: 1px solid #e3e3e3;
         .item {
           font-size: 15px;
-          font-family: "Thasadith", sans-serif !important;
+          font-weight: 200;
         }
         .quantity {
           font-size: 13px;
-          font-weight: bold;
+          font-weight: 400;
           background-color: #f3f3f3;
           color: #9a9a9a;
           padding: 0px 10px;

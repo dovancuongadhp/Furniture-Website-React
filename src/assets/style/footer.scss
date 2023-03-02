@@ -1,0 +1,44 @@
+$gray-titlebar-color: #fbfbfb;
+
+.footer__container {
+    margin-top: 200px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    ul {
+        list-style: none;
+    }
+    .footer__wrapper{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        // background-color: $gray-titlebar-color;
+        padding: 100px 0;
+        background-color: gray;
+        .footer__el {
+            background-color: red;
+            margin: 10px 20px;
+        }
+        .footer__heading{
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .payment__method{
+            max-width: 300px;
+        }
+        .shop__guide {
+
+        }
+        .company {
+
+        }
+       
+    }
+    @media screen and (max-width: 675px) {
+        .footer__wrapper{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
