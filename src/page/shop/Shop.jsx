@@ -42,10 +42,6 @@ export default function Shop() {
         "https://images.gessato.com/cb:OWDa~b707/w:auto/h:auto/q:mauto/f:avif/https://www.gessato.com/wp-content/uploads/2023/01/dieckmann-typ-dieckmann-typ-chair-chair-7.jpg",
     },
   ];
-  const handleFilterByPrice = useCallback((value) => {
-    console.log("value filter", value);
-  }, []);
-
   function handleClickCart() {
     setCount(count + 1);
     console.log("count", count);
@@ -78,7 +74,7 @@ export default function Shop() {
           </div>
         </div>
         <aside className="shop__categories">
-          <Category onFilterByPrice={handleFilterByPrice} />
+          <Category />
         </aside>
       </div>
     </div>

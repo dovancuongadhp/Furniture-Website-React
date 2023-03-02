@@ -1,14 +1,14 @@
-import React, { useState,memo } from "react";
+import React, { memo } from "react";
 import "../../assets/style/categories.scss";
 import Button from "../button/Button";
-function Category({onFilterByPrice}) {
-    const [valueSlider,setValueSlider] = useState(0);  
-    function scrollSliderOnchange(event){
-       const valueSlider = event.target.value;
-       setValueSlider(valueSlider)
-       onFilterByPrice(valueSlider)
-    }
-    console.log("category mounted")
+import Slider from "../slider/Slider";
+function Category() {
+  function scrollSliderOnchange(value) {
+    console.log("slider",value)
+  }
+  function handleFilter(){
+    console.log("click btn filter")
+  }
   return (
     <div className="category__container">
       <p>Categories</p>
@@ -33,25 +33,14 @@ function Category({onFilterByPrice}) {
         </ul>
       </div>
       <p>Filter by price</p>
-      <div className="slide__price__wrapper">
-        <input
-          type="range"
-          min="0"
-          max="100"
-          step="10"
-          value={valueSlider}
-          className="slider"
-          id="myRange"
-          onChange={scrollSliderOnchange}
-        />
-      </div>
+      <Slider scrollSliderOnchange={scrollSliderOnchange}/>
       <div className="price__label__wrapper">
-        <p>Price: <span className="price">£0 — £10</span></p>
-        <Button>
-            FILTER
-        </Button>
+        <p>
+          Price: <span className="price">£0 — £10</span>
+        </p>
+        <Button onClick={handleFilter}>FILTER</Button>
       </div>
     </div>
   );
 }
-export default memo(Category)
+export default memo(Category);
