@@ -1,7 +1,9 @@
 $primary-color: #ff7012;
 .shop__container {
   .shop__wrapper {
+    // background-color: red;
     margin: 0 auto;
+    padding: 0 20px;
     display: flex;
     justify-content: center;
     max-width: 1400px;
@@ -34,7 +36,7 @@ $primary-color: #ff7012;
       }
     }
     .shop__categories {
-      margin: 20px;
+      margin: 0 20px;
     }
   }
 
