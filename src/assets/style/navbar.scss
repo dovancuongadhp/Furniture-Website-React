@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
-$primary-color: #ff7012;
+@import "variables";
 .navbar {
   font-size: 16px;
   margin: 0 20px;
@@ -15,7 +15,7 @@ $primary-color: #ff7012;
       user-select: none;
       cursor: pointer;
       &:hover {
-        color: #ff7012;
+        color: $primary-color;
       }
     }
     // danh sách thẻ link
@@ -43,7 +43,7 @@ $primary-color: #ff7012;
             font-size: 10px;
             font-weight: 500;
             border-radius: 100px;
-            background-color: #ff7012;
+            background-color: $primary-color;
           }
         }
       }
@@ -62,7 +62,7 @@ $primary-color: #ff7012;
   .navbar__inner {
     .list__links {
       position: absolute;
-      z-index: 1;
+      z-index: 99;
       top: 70px;
       right: 0;
       left: 0;
@@ -80,7 +80,7 @@ $primary-color: #ff7012;
         }
       }
       .active {
-        color: #ff7012 !important;
+        color: $primary-color !important;
       }
     }
   }

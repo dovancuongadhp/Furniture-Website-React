@@ -1,5 +1,4 @@
-$orange-slider-color: #ffb186;
-$gray-text-color: #505050;
+@import "variables";
 
 .slider__price__wrapper {
     .slider {
@@ -24,7 +23,7 @@ $gray-text-color: #505050;
       width: 18px;
       height: 18px;
       border-radius: 50%;
-      border: 2px solid #fc8646;
+      border: 2px solid $primary-color;
       background: white;
       cursor: ew-resize;
     }
@@ -33,7 +32,7 @@ $gray-text-color: #505050;
       width: 25px;
       height: 25px;
       border-radius: 50%;
-      background: $orange-slider-color;
+      background: $slider-orange-color;
       cursor: ew-resize;
     }
   }

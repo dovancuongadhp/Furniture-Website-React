@@ -1,5 +1,4 @@
-$gray-titlebar-color: #fbfbfb;
-$primary-color: #ff7012;
+@import "variables";
 .footer__container {
   margin-top: 200px;
   position: relative;
@@ -15,7 +14,7 @@ $primary-color: #ff7012;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: $gray-titlebar-color;
+    background-color: $titlebar-gray-color;
     padding: 100px 0;
     // background-color: gray
     .footer__el {
@@ -60,7 +59,7 @@ $primary-color: #ff7012;
     }
   }
   @media screen and (max-width: 1150px) {
-    margin-top: 10pxs;
+    margin-top: 10px;
     .footer__wrapper {
       flex-direction: column;
       // align-items: center;

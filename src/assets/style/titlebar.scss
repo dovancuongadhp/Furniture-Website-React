@@ -1,5 +1,4 @@
-$gray-titlebar-color: #fbfbfb;
-
+@import "variables";
 .titlebar{
     &__container{
         
@@ -9,7 +8,7 @@ $gray-titlebar-color: #fbfbfb;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: $gray-titlebar-color;
+        background-color: $titlebar-gray-color;
 
         .name__page{
             margin-left: 70px;
