@@ -60,12 +60,14 @@ $primary-color: #ff7012;
     }
   }
   @media screen and (max-width: 1150px) {
+    margin-top: 10px;
     .footer__wrapper {
       flex-direction: column;
       // align-items: center;
       justify-content: center;
     }
     .footer__wrapper {
+      padding: 20px 0;
       .footer__el {
         margin: 10px 20px;
       }
