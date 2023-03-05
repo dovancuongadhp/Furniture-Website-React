@@ -18,12 +18,14 @@ export default function Home() {
               <button className="btn-learnmore">Learn more</button>
             </div>
             <div className="arm-chair">
-              <img src={ArmChair} alt="arm-chair" />
+              <img src={"https://shopthienduong.com/images/upload/Image/Ghe-tinh-yeu-tantra-005.png"} alt="arm-chair" />
             </div>
           </section>
-          <section></section>
-          <section>
-
+          <section className="discount">
+            <p>! Use discount code: FIRSTIME to get 10% off your first order !</p>
+          </section>
+          <section className="page-two">
+            
           </section>
         </div>
       </div>

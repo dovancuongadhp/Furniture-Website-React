@@ -7,7 +7,7 @@
     &__wrapper {
     }
     &__inner {
-      max-width: 1500px;
+      max-width: 1900px;
       min-width: 1300;
       margin: 0 auto;
       section.page-one {
@@ -45,10 +45,22 @@
           }
         }
       }
+      section.discount{
+        text-align: center;
+        padding: 20px;
+        background-color: antiquewhite;
+        p {
+          font-size: 16px;
+        }
+      }
+      section.page-two{
+        height: 100vh;
+        background-color: aquamarine;
+      }
       @media screen and (max-width: 700px) {
         section.page-one {
           padding-top: 30px;
-          background-color: yellow;
+          background-color: rgb(255, 52, 113);
           flex-direction: column;
           justify-content: center;
           .arm-chair {
