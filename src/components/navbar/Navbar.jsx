@@ -14,7 +14,7 @@ export default function Navbar() {
     <div className="navbar">
       <div className="navbar__inner">
         <div className="brand">Unicoin</div>
-        <div className="list__links" style={!isShowMenu && width <= 810 ? {display:'none'} : null} >
+        <div className="list__links" style={!isShowMenu && width <= 830 ? {display:'none'} : null} >
           <NavLink to={"/"}>Home</NavLink>
           <NavLink to={"/shop"}>Shop</NavLink>
           <NavLink to={"/decor"}>Decor</NavLink>
