@@ -1,5 +1,5 @@
 import listRoutes from "./listRoutes";
-import { Fragment, Suspense } from "react";
+import { Suspense } from "react";
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import BaseLayout from "../layouts/BaseLayout";
@@ -7,7 +7,6 @@ import Loading from "../components/loading/Loading";
 
 export default function RoutesApp() {
   return (
-    <Fragment>
       <Suspense fallback={<Loading />}>
         <BrowserRouter>
           <Routes>
@@ -30,6 +29,5 @@ export default function RoutesApp() {
           </Routes>
         </BrowserRouter>
       </Suspense>
-    </Fragment>
   );
 }
