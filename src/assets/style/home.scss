@@ -44,7 +44,9 @@
       .discount {
         background-color: aqua;
         text-align: center;
-        padding: 10px;
+        font-weight: 500;
+        font-size: 20px;
+        padding: 30px 10px;
       }
       .page-two {
         display: grid;
@@ -95,7 +97,7 @@
           grid-template-columns: repeat(1, 1fr) !important;
           .collection {
             max-width: 400px;
-            min-width: 280px;
+            min-width: 300px;
             margin: 0 auto;
             &__img {
               img {
