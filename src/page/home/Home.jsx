@@ -4,7 +4,7 @@ import ArmChair from "../../assets/img/home-page/arm-chair.png";
 import CircleRight from "../../assets/svg/CircleRight";
 import ImgGreen from '../../assets/img/home-page/img-green.jpg';
 import ImgLamp from '../../assets/img/home-page/img-lamp.jpg';
-import ImgPink from '../../assets/img/home-page/img-pink.jpg';
+import ImgFurniture from '../../assets/img/cropped-images/img-1.jpg';
 import BrandSlide from "../../components/brandSlide/BrandSlide";
 export default function Home() {
   return (
@@ -47,7 +47,7 @@ export default function Home() {
               </div>
               <div className="collection">
                 <div className="collection__img">
-                  <img src={ImgPink} alt="collection" />
+                  <img src={ImgFurniture} alt="collection" />
                 </div>
               </div>
           </div> 
