@@ -8,6 +8,7 @@ export default function CardCollection({ image }) {
       <div className="collection__img">
         <img src={imageSrc} alt="collection" />
       </div>
+      <button className="showmore">Show more</button>
     </div>
   );
 }

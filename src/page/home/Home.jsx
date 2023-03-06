@@ -1,10 +1,9 @@
 import React from "react";
 import "../../assets/style/home.scss";
-import ArmChair from "../../assets/img/home-page/arm-chair.png";
-import ArmChairBg from "../../assets/img/home-page/arm-chair-bg.png";
+import ArmChairBg from '../../assets/img/home-page/arm-chair-bg.png'
 import ImgGreen from "../../assets/img/home-page/img-green.jpg";
 import ImgLamp from "../../assets/img/home-page/img-lamp.jpg";
-import ImgFurniture from "../../assets/img/product-img/img-1.jpg";
+import ImgPink from "../../assets/img/home-page/img-pink.jpg";
 import BrandSlide from "./brand-slide/BrandSlide";
 import CardCollection from "./card-collection/CardCollection";
 export default function Home() {
@@ -39,9 +38,9 @@ export default function Home() {
         </section>
         <section>
           <div className="page-two">
-            <CardCollection />
-            <CardCollection />
-            <CardCollection />
+            <CardCollection image={ImgLamp}/>
+            <CardCollection image={ImgPink}/>
+            <CardCollection image={ImgGreen}/>
           </div>
         </section>
         <section className="brand-slide">
