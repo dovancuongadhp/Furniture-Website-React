@@ -1,0 +1,14 @@
+.collection {
+  &__img {
+    min-width: 200px !important;
+    max-width: 400px !important;
+    margin: 0 auto;
+    img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+  }
+  @media screen and (max-width: 950px) {
+  }
+}
