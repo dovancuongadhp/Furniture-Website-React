@@ -5,6 +5,7 @@ import CircleRight from "../../assets/svg/CircleRight";
 import ImgGreen from '../../assets/img/home-page/img-green.jpg';
 import ImgLamp from '../../assets/img/home-page/img-lamp.jpg';
 import ImgPink from '../../assets/img/home-page/img-pink.jpg';
+import BrandSlide from "../../components/brandSlide/BrandSlide";
 export default function Home() {
   return (
     <div className="home__container">
@@ -28,7 +29,7 @@ export default function Home() {
         <section>
           <div className="discount">
             <p>
-              ! Use discount code: FIRSTIME to get 10% off your first order !
+              ! Use discount code <span className="hight-light-color">FIRSTIME</span> to get <span className="hight-light-color">10%</span> off your first order !
             </p>
           </div>
         </section>
@@ -50,6 +51,9 @@ export default function Home() {
                 </div>
               </div>
           </div> 
+        </section>
+        <section className="brand-slide">
+          <BrandSlide />
         </section>
       </div>
     </div>
