@@ -1,9 +1,9 @@
-import Image1 from '../assets/img/cropped-images/img-1.jpg'
-import Image2 from '../assets/img/cropped-images/img-2.jpg'
-import Image3 from '../assets/img/cropped-images/img-3.jpg'
-import Image4 from '../assets/img/cropped-images/img-4.jpg'
-import Image5 from '../assets/img/cropped-images/img-5.jpg'
-import Image6 from '../assets/img/cropped-images/img-6.jpg'
+import Image1 from '../assets/img/product-img/img-1.jpg'
+import Image2 from '../assets/img/product-img/img-2.jpg'
+import Image3 from '../assets/img/product-img/img-3.jpg'
+import Image4 from '../assets/img/product-img/img-4.jpg'
+import Image5 from '../assets/img/product-img/img-5.jpg'
+import Image6 from '../assets/img/product-img/img-6.jpg'
 const fakeListProduct = [
     {
         id: 1,

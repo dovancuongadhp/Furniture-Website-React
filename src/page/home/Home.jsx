@@ -1,9 +1,10 @@
 import React from "react";
 import "../../assets/style/home.scss";
 import ArmChair from "../../assets/img/home-page/arm-chair.png";
+import ArmChairBg from "../../assets/img/home-page/arm-chair-bg.png";
 import ImgGreen from "../../assets/img/home-page/img-green.jpg";
 import ImgLamp from "../../assets/img/home-page/img-lamp.jpg";
-import ImgFurniture from "../../assets/img/cropped-images/img-1.jpg";
+import ImgFurniture from "../../assets/img/product-img/img-1.jpg";
 import BrandSlide from "./brand-slide/BrandSlide";
 import CardCollection from "./card-collection/CardCollection";
 export default function Home() {
@@ -22,7 +23,7 @@ export default function Home() {
               <button className="btn-learnmore">Learn more</button>
             </div>
             <div className="arm-chair">
-              <img src={ArmChair} alt="arm-chair" />
+              <img src={ArmChairBg} alt="arm-chair" />
             </div>
           </div>
         </section>
@@ -45,6 +46,9 @@ export default function Home() {
         </section>
         <section className="brand-slide">
           <BrandSlide />
+        </section>
+        <section className="page-three">
+
         </section>
       </div>
     </div>

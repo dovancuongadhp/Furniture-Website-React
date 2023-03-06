@@ -43,11 +43,11 @@
       .discount {
         // background-color: $primary-color;
         text-align: center;
-        font-weight: 500;
-        font-size: 20px;
-        padding: 30px 10px;
-        margin: 30px 0;
-        .hight-light-color{
+        // font-weight: 500;
+        font-size: 18px;
+        padding: 20px 20px;
+        // margin: 30px 0;
+        .hight-light-color {
           color: $primary-color;
         }
       }
@@ -57,21 +57,6 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-gap: 20px;
-        // .collection {
-        //   &__img {
-        //     min-width: 200px !important;
-        //     max-width: 400px !important;
-        //     margin: 0 auto;
-        //     img {
-        //       width: 100%;
-        //       height: 500px;
-        //       object-fit: cover;
-        //     }
-        //   }
-        // }
-      }
-      .brand-slide{
-        padding: 20px;
       }
     }
 
@@ -103,12 +88,6 @@
         .page-two {
           grid-template-columns: repeat(1, 1fr) !important;
           padding: 0 20px;
-          .collection {
-            &__img {
-              img {
-              }
-            }
-          }
         }
       }
     }
