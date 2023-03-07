@@ -1,12 +1,12 @@
 import React from "react";
 import "../../assets/style/home.scss";
-import ArmChairBg from "../../assets/img/home-page/arm-chair.png";
+import ArmChairBg from "../../assets/img/home-page/arm-chair-orange.png";
 import LayerBlue from "../../assets/img/home-page/layerBlue.jpg";
 import LayerGreen from "../../assets/img/home-page/layerGreen.jpg";
 import LayerOrange from "../../assets/img/home-page/layerOrange.jpg";
 import BrandSlide from "./brand-slide/BrandSlide";
 import CardCollection from "./card-collection/CardCollection";
-import GraySofaBrown from "../../assets/img/home-page/gray-sofa-brown.jpg";
+import GraySofaBrown from "../../assets/img/home-page/gray-sofa-brown-copy.jpg";
 export default function Home() {
   return (
     <div className="home__container">
@@ -49,7 +49,7 @@ export default function Home() {
         </section>
         <section>
           <div className="page-three">
-            <p>Featured products with amazing color variety for your home</p>
+            {/* <p>Featured products with amazing color variety for your home</p> */}
             <img src={GraySofaBrown} alt="lamp" />
           </div>
         </section>
