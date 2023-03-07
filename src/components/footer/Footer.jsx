@@ -1,7 +1,7 @@
 import React from "react";
-import "../../assets/style/footer.scss";
-import { LockIcon, PaypalIcon, VisaIcon } from "../../assets/icons";
-import CardThumbnail from "../card-thumbnail/CardThumbnail";
+import "@styles/footer.scss";
+import { LockIcon, PaypalIcon, VisaIcon } from "@icons";
+import CardThumbnail from "@components/card-thumbnail/CardThumbnail";
 //image
 import {fakeListProductThumnail} from "../../fakedata/listProduct";
 export default function Footer() {

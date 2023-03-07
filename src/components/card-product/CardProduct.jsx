@@ -1,6 +1,6 @@
 import React from "react";
-import '../../assets/style/card-product.scss'
-import {CartIcon} from '../../assets/icons'
+import '@styles/card-product.scss'
+import {CartIcon} from '@icons'
 export default function CardProduct({ image, productName, price, onClick}) {
   return (
     <div className="product__wrapper">

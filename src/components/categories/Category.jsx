@@ -1,7 +1,7 @@
 import React, { memo } from "react";
-import "../../assets/style/categories.scss";
-import Button from "../button/Button";
-import Slider from "../slider/Slider";
+import "@styles/categories.scss";
+import Button from "@components/button/Button";
+import Slider from "@components/slider/Slider";
 function Category() {
   function scrollSliderOnchange(value) {
     console.log("slider",value)

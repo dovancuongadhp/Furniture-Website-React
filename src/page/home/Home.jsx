@@ -1,12 +1,12 @@
 import React from "react";
-import "../../assets/style/home.scss";
-import ArmChairBg from "../../assets/img/home-page/arm-chair-orange.png";
-import LayerBlue from "../../assets/img/home-page/layerBlue.jpg";
-import LayerGreen from "../../assets/img/home-page/layerGreen.jpg";
-import LayerOrange from "../../assets/img/home-page/layerOrange.jpg";
+import "@styles/home.scss";
+import ArmChairBg from "@imgs/home-page/arm-chair-orange.png";
+import LayerBlue from "@imgs/home-page/layerBlue.jpg";
+import LayerGreen from "@imgs/home-page/layerGreen.jpg";
+import LayerOrange from "@imgs/home-page/layerOrange.jpg";
+import GraySofaBrown from "@imgs/home-page/gray-sofa-brown-copy.jpg";
 import BrandSlide from "./brand-slide/BrandSlide";
 import CardCollection from "./card-collection/CardCollection";
-import GraySofaBrown from "../../assets/img/home-page/gray-sofa-brown-copy.jpg";
 export default function Home() {
   return (
     <div className="home__container">

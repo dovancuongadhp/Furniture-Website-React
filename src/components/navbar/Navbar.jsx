@@ -1,8 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
-import { CartIcon, SearchIcon, EcoIcon } from "../../assets/icons";
-import "../../assets/style/navbar.scss";
-import MenuIcon from "../../assets/icons/MenuIcon";
+import "@styles/navbar.scss";
+import { CartIcon, SearchIcon, EcoIcon,MenuIcon } from "@icons";
 import useWindowDimensions from "../../hooks/useWindowSize";
 export default function Navbar() {
   const [isShowMenu,setShowMenu] = useState(false)

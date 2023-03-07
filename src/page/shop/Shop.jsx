@@ -1,8 +1,8 @@
 import React, { useCallback, useState } from "react";
-import "../../assets/style/shop.scss";
-import TitleBar from "../../components/titlebar/TitleBar";
-import Category from "../../components/categories/Category";
-import CardProduct from "../../components/card-product/CardProduct";
+import "@styles/shop.scss";
+import TitleBar from "@components/titlebar/TitleBar";
+import Category from "@components/categories/Category";
+import CardProduct from "@components/card-product/CardProduct";
 
 //image
 import {fakeListProduct} from '../../fakedata/listProduct'

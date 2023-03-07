@@ -1,4 +1,4 @@
-import listRoutes from "./listRoutes";
+import listRoutes from "./listroutes";
 import { Suspense } from "react";
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";

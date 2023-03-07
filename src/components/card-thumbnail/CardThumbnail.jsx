@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../assets/style/card-thumbnail.scss'
+import '@styles/card-thumbnail.scss'
 // card product for footer
 export default function CardThumbnail({ image, productName, price}) {
   return (
