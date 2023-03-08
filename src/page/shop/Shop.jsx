@@ -1,14 +1,16 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import "@styles/shop.scss";
 import TitleBar from "@components/titlebar/TitleBar";
 import Category from "@components/categories/Category";
 import CardProduct from "@components/card-product/CardProduct";
 
 //image
-import {fakeListProduct} from '../../fakedata/listProduct'
+import { fakeListProduct } from "../../fakedata/listProduct";
 
 export default function Shop() {
-  
+  useEffect(() => {
+    document.title = "Shop"
+  }, []);
   const [count, setCount] = useState(1);
 
   function handleClickCart() {

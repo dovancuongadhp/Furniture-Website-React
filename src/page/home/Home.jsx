@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "@styles/home.scss";
 import ArmChairBg from "@imgs/home-page/arm-chair-orange.png";
 import LayerBlue from "@imgs/home-page/layerBlue.jpg";
@@ -8,6 +8,9 @@ import GraySofaBrown from "@imgs/home-page/gray-sofa-brown-copy.jpg";
 import BrandSlide from "./brand-slide/BrandSlide";
 import CardCollection from "./card-collection/CardCollection";
 export default function Home() {
+  useEffect(() => {
+    document.title = "Home"
+  }, []);
   return (
     <div className="home__container">
       <div className="home__wrapper">

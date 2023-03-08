@@ -1,5 +1,5 @@
 import React from "react";
-import "../../assets/style/titlebar.scss";
+import "@styles/titlebar.scss";
 export default function TitleBar({namePage}) {
   return (
     <div className="titlebar__container">

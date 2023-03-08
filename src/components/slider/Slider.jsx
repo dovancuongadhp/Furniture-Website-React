@@ -1,5 +1,5 @@
 import React, { memo, useState } from "react";
-import "../../assets/style/slider.scss";
+import "@styles/slider.scss";
 
 function Slider({ scrollSliderOnchange }) {
   const [valueSlider, setValueSlider] = useState(0);
