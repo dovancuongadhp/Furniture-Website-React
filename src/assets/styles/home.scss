@@ -1,0 +1,102 @@
+@import "variables";
+.home__container {
+  position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
+  .home__wrapper {
+    section {
+      .page-one {
+        height: 800px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        .arm-chair {
+          img {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            width: clamp(250px, 50vw, 700px);
+            transform: translateY(-50%);
+            padding-right: 30px;
+            z-index: 5;
+          }
+        }
+        .description {
+          margin-left: 40px;
+          .title {
+            min-width: 200px;
+            max-width: 400px;
+            padding: 20px 0;
+            // background-color: red;
+          }
+          .btn-learnmore {
+            outline: none;
+            border: none;
+            padding: 13px;
+            font-size: 16px;
+            font-weight: 500;
+            color: white;
+            background-color: $primary-color;
+          }
+        }
+      }
+      .discount {
+        // background-color: $primary-color;
+        text-align: center;
+        // font-weight: 500;
+        font-size: 18px;
+        padding: 20px 20px;
+        // margin: 30px 0;
+        .hight-light-color {
+          color: $primary-color;
+        }
+      }
+      .page-two {
+        margin-top: 50px;
+        padding: 0 30px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 10px;
+      }
+      .page-three{
+        // height: 400px;
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    @media screen and (max-width: 950px) {
+      section {
+        .page-one {
+          padding-top: 30px;
+          // background-color: rgb(255, 101, 147);
+          flex-direction: column;
+          justify-content: space-evenly;
+          .arm-chair {
+            img {
+              padding: 0;
+              position: relative;
+              top: 0;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+          }
+          .description {
+            order: 1;
+            margin: 0 20px;
+            .title {
+            }
+            .btn-learnmore {
+            }
+          }
+        }
+        .page-two {
+          grid-template-columns: repeat(1, 1fr) !important;
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+}

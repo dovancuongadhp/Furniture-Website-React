@@ -1,0 +1,35 @@
+@import "variables";
+.titlebar{
+    &__container{
+        
+    }
+    &__inner{
+        height: 140px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $titlebar-gray-color;
+
+        .name__page{
+            margin-left: 70px;
+        }
+        .current__link{
+            font-size: 16px;
+            margin-right: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .prev{
+                color: #8d8d8d;
+            }
+            .arrow{
+                color: #686868;
+                font-size: 20px;
+            }
+            .current{
+                font-weight: 700;
+                color: #686868;
+            }
+        }
+    }
+}

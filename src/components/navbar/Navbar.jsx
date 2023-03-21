@@ -1,8 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
-import { CartIcon, SearchIcon, EcoIcon } from "../../assets/icons";
-import "../../assets/style/navbar.scss";
-import MenuIcon from "../../assets/icons/MenuIcon";
+import "@styles/navbar.scss";
+import { CartIcon, SearchIcon, EcoIcon,MenuIcon } from "@icons";
 import useWindowDimensions from "../../hooks/useWindowSize";
 export default function Navbar() {
   const [isShowMenu,setShowMenu] = useState(false)
@@ -14,7 +13,7 @@ export default function Navbar() {
     <div className="navbar">
       <div className="navbar__inner">
         <div className="brand">Unicoin</div>
-        <div className="list__links" style={!isShowMenu && width <= 810 ? {display:'none'} : null} >
+        <div className="list__links" style={!isShowMenu && width <= 830 ? {display:'none'} : null} >
           <NavLink to={"/"}>Home</NavLink>
           <NavLink to={"/shop"}>Shop</NavLink>
           <NavLink to={"/decor"}>Decor</NavLink>

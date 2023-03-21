@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "../components/navbar/Navbar";
-import Footer from "../components/footer/Footer";
-import "../assets/style/layout.scss";
+import Navbar from "@components/navbar/Navbar";
+import Footer from "@components/footer/Footer";
+import "@styles/layout.scss";
 export default function PrimaryLayout({ children }) {
   return (
     <div className="primary__layout__container">

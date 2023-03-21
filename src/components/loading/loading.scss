@@ -1,24 +1,24 @@
 $primary-color: #ff7012;
 .loading-circle {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 4px solid #ccc;
-    border-top-color: $primary-color; /* màu sắc của vòng tròn tải trang */
-    animation: loading-circle 1s ease-in-out infinite; /* áp dụng animation */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -50px;
-    margin-left: -20px;
+  user-select: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 4px solid #ccc;
+  border-top-color: $primary-color; /* màu sắc của vòng tròn tải trang */
+  animation: loading-circle 1s ease-in-out infinite; /* áp dụng animation */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -20px;
+}
+
+@keyframes loading-circle {
+  0% {
+    transform: rotate(0);
   }
-  
-  @keyframes loading-circle {
-    0% {
-      transform: rotate(0);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
   }
-  
+}

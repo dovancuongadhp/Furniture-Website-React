@@ -1,0 +1,15 @@
+.btn{
+    font-size: 13px;
+    font-weight: 600;
+    color: #8d8d8d;
+    background-color:#f3f3f3;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease; 
+    cursor: pointer;
+    &:hover{
+        background-color: lighten($color: #8d8d8d, $amount: 30%);
+    }
+}

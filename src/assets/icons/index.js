@@ -4,4 +4,5 @@ import EcoIcon from './EcoIcon'
 import VisaIcon from './VisaIcon'
 import PaypalIcon from './PaypalIcon'
 import LockIcon from './LockIcon'
-export {CartIcon,SearchIcon,EcoIcon,VisaIcon,PaypalIcon,LockIcon}
+import MenuIcon from './MenuIcon'
+export {CartIcon,SearchIcon,EcoIcon,VisaIcon,PaypalIcon,LockIcon,MenuIcon}

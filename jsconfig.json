@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "*": ["src/*"],
+        "@components/*": ["./src/components/*"],
+        "@styles/*": ["./src/assets/styles/*"],
+        "@icons/*": ["./src/assets/icons/*"],
+        "@imgs/*":["./src/assets/img/*"],
+        "underscore": ["lodash"]
+      }
+    }
+  }

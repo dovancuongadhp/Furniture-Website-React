@@ -1,7 +1,12 @@
 import React from "react";
-import "../../assets/style/footer.scss";
-import { LockIcon, PaypalIcon, VisaIcon } from "../../assets/icons";
+import "@styles/footer.scss";
+import { LockIcon, PaypalIcon, VisaIcon } from "@icons";
+import CardThumbnail from "@components/card-thumbnail/CardThumbnail";
+//image
+import {fakeListProductThumnail} from "../../fakedata/listProduct";
 export default function Footer() {
+
+  
   return (
     <footer className="footer__container">
       <div className="footer__wrapper">
@@ -29,10 +34,11 @@ export default function Footer() {
         <div className="footer__el top__rate">
           <p className="footer__heading">TOP RATE</p>
           <ul className="footer__listitem">
-            <li>New Product 2022</li>
-            <li>New Product 2023</li>
-            <li>New Product in Summer</li>
-            <li>Product Viral</li>
+            {fakeListProductThumnail.map(item => (
+              <li key={item.id}>
+                <CardThumbnail image={item.imgLink} price={item.price} productName={item.productName}/>
+              </li>
+            ))}
           </ul>
         </div>
         <div className="footer__el shop__guide">
