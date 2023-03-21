@@ -6,10 +6,14 @@
   "scripts": {
     "dev": "vite",
     "staging": "vite --host 0.0.0.0",
+    "server": "node ./server/index.js",
+    "production": "npm run build && npm run server",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.1",
