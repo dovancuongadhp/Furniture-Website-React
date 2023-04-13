@@ -23,13 +23,9 @@ export default function Home() {
       <meta property="og:url" content="https://cuongdkun.top/"/>
       <meta property="og:title" content="Tiêu đề chia sẻ trên Facebook"/>
       <meta property="og:description" content="Nội dung mô tả của trang web"/>
-      <meta property="og:image" content="https://plus.unsplash.com/premium_photo-1680721443514-dc4a45bd89f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80"/>
+      <meta property="og:image" content="https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"/>
 
-      <meta property="twitter:card" content="summary_large_image"/>
-      <meta property="twitter:url" content="https://cuongdkun.top/"/>
-      <meta property="twitter:title" content="Tiêu đề chia sẻ trên Facebook"/>
-      <meta property="twitter:description" content="Nội dung mô tả của trang web"/>
-      <meta property="twitter:image" content="https://plus.unsplash.com/premium_photo-1680721443514-dc4a45bd89f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80"/>
+      
     </Helmet>
       <div className="home__container">
         <div className="home__wrapper">
