@@ -5,7 +5,6 @@ function App() {
 
   return (
     <div className="App">
-      <h1>router</h1>
       <RoutesApp />
     </div>
   )
